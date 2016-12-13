@@ -1,4 +1,4 @@
-# ruby-lvm-attrib
+# chef-ruby-lvm-attrib
 
 This is a list of attributes for lvm objects. They are generated from the source code and broken down by version. See ADDING ATTRIBUTES below to contribute.
 
