@@ -1,3 +1,9 @@
-pkg
-doc
-*.gem
+*.sw?
+Gemfile.lock
+pkg/
+tmp/
+coverage/
+.DS_Store
+.bundle
+*~
+vendor
