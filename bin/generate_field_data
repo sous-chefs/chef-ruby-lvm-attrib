@@ -5,8 +5,8 @@
 #
 # ./generate_field_data ~/LVM2.2.02.38
 
-require 'fileutils'
-require 'yaml'
+require "fileutils"
+require "yaml"
 
 VERSION_FILE = "/VERSION"
 COLUMNS_FILE = "/lib/report/columns.h"
@@ -78,12 +78,12 @@ TYPE_CONVERSION_MAP = {
   "cache_read_hits" => "Integer",
   "cache_read_misses" => "Integer",
   "cache_write_hits" => "Integer",
-  "cache_write_misses" => "Integer"
+  "cache_write_misses" => "Integer",
 }
 
 lvm_source = ARGV[0]
 
-version = File.readlines(lvm_source + VERSION_FILE)[0].split(' ')[0]
+version = File.readlines(lvm_source + VERSION_FILE)[0].split(" ")[0]
 
 lvs     = []
 lvssegs = []
@@ -93,8 +93,8 @@ vgs     = []
 File.readlines(lvm_source + COLUMNS_FILE).each do |line|
   # eg: FIELD(LVS, lv, STR, "LV UUID", lvid.id[1], 38, uuid, "lv_uuid", "Unique identifier")
   next unless line =~ %r{^FIELD\((.*)\)$}
-  fields = $1.split(', ')
-  fields.each { |f| f.gsub!(%r{^"}, ''); f.gsub!(%r{"$}, '') }
+  fields = $1.split(", ")
+  fields.each { |f| f.gsub!(%r{^"}, ""); f.gsub!(%r{"$}, "") }
   p fields if debug
   app           = fields[0]
   general_type  = fields[2]
@@ -104,7 +104,7 @@ File.readlines(lvm_source + COLUMNS_FILE).each do |line|
   description   = fields[8]
   p app, general_type, specific_type, column, method, description if debug
 
-  if ["NUM", "SIZ"].include?(general_type)
+  if %w{NUM SIZ}.include?(general_type)
     attribute_type = TYPE_CONVERSION_MAP[specific_type]
     if attribute_type.nil?
       puts "Oops, missing type conversion data of column '#{specific_type}' use by '#{app}' which says its going to return a '#{specific_type}'"
@@ -120,24 +120,24 @@ File.readlines(lvm_source + COLUMNS_FILE).each do |line|
   # with issues (seg_start).
   case app
   when "LVS", "LVSINFOSTATUS"
-    method.sub!(%r{^lv_}, '')
+    method.sub!(%r{^lv_}, "")
   when "SEGS"
-    method.sub!(%r{^seg_}, '')
+    method.sub!(%r{^seg_}, "")
   when "LABEL"
-    method.sub!(%r{^pv_}, '')
+    method.sub!(%r{^pv_}, "")
   when "PVS"
-    method.sub!(%r{^pv_}, '')
+    method.sub!(%r{^pv_}, "")
   when "PVSEGS"
-    method.sub!(%r{^pvseg_}, '')
+    method.sub!(%r{^pvseg_}, "")
   when "VGS"
-    method.sub!(%r{^vg_}, '')
+    method.sub!(%r{^vg_}, "")
   end
 
   attribute = {
     :method => method,
     :column => column,
     :type_hint => attribute_type,
-    :description => description
+    :description => description,
   }
 
   case app
