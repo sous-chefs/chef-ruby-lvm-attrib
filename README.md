@@ -1,13 +1,12 @@
 # ruby-lvm-attrib
-## DESCRIPTION:
-This is a list of attributes for lvm objects. They are generated from the  source code and broken down by version. See ADDING ATTRIBUTES below to contribute.
 
-At their core these files exist to determine which arguments to pass lvs/vgs/pvs and the subsequent type conversions.<br>Currently this is split from the main ruby-lvm gem since these files require updating to follow LVM2 releases.
+This is a list of attributes for lvm objects. They are generated from the source code and broken down by version. See ADDING ATTRIBUTES below to contribute.
 
-## FEATURES/PROBLEMS:
-- This library may go away depending on future progress of ruby-lvm.
+At their core these files exist to determine which arguments to pass lvs/vgs/pvs and the subsequent type conversions.
 
-## SYNOPSIS:
+Currently this is split from the main ruby-lvm gem since these files require updating to follow LVM2 releases.
+
+## Usage
 
 ```ruby
   require 'lvm/attributes'
@@ -15,18 +14,23 @@ At their core these files exist to determine which arguments to pass lvs/vgs/pvs
   attributes = Attributes.load("2.0.36", "vgs.yaml")
 ```
 
-## REQUIREMENTS:
+## Requirements
+
 - None
 
-## INSTALL:
-- `sudo gem install ruby-lvm-attrib`
+## Installation
 
-## ADDING ATTRIBUTES:
+```bash
+sudo gem install ruby-lvm-attrib
+```
+
+## Updating for new LVM releases
 
 To add attributes:
 
-Use [update-lvm.sh](update-lvm.sh) script to add new version.
-Find the interested LVM2 tag from [LVM2 Repository](https://git.fedorahosted.org/cgit/lvm2.git/refs/tags).
+Use
+
+<update-lvm.sh> script to add new version. Find the interested LVM2 tag from <a href="https://git.fedorahosted.org/cgit/lvm2.git/refs/tags">LVM2 Repository</a>.</update-lvm.sh>
 
 - Fork this repository
 - `git clone your-forked-repo`
@@ -44,7 +48,8 @@ If all is well, publish the changes and make Pull Request from GitHub web:
 - `git push origin mybranch`
 - Submit PR to this repository. **Please make sure to point your pull at the `next` branch -- NOT MASTER!**
 
-### MISSING ATTRIBUTE TYPE:
+### Missing Attribute Type:
+
 If you get an error like the below:
 
 ```
@@ -56,10 +61,8 @@ Figure out the missing type and rerun.
 - If the 3rd field is NUM, type will be Integer. If 3rd field is STR, type will be String.
 - Add the information to `bin/generate_field_data` in the TYPE_CONVERSION_MAP and try running again
 
-## FEEDBACK:
-Please feel free to submit patches or constructive criticism, I'm still pretty new to ruby and object oriented programming in general.
+## License
 
-## LICENSE:
 (The MIT License)
 
 Copyright (c) 2008 Matthew Kent, Bravenet Web Services Inc.
