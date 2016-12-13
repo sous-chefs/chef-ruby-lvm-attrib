@@ -1,3 +1,57 @@
+# 0.1.0 (2016-12-12)
+
+- Added v2_02_101 attributes
+- Added v2_02_102 attributes
+- Added v2_02_103 attributes
+- Added v2_02_107 attributes
+- Added v2_02_108 attributes
+- Added v2_02_109 attributes
+- Added v2_02_110 attributes
+- Added v2_02_112 attributes
+- Added v2_02_113 attributes
+- Added v2_02_117 attributes
+- Added v2_02_121 attributes
+- Added v2_02_123 attributes
+- Added v2_02_124 attributes
+- Added v2_02_125 attributes
+- Added v2_02_126 attributes
+- Added v2_02_127 attributes
+- Added v2_02_128 attributes
+- Added v2_02_129 attributes
+- Added v2_02_131 attributes
+- Added v2_02_134 attributes
+- Added v2_02_135 attributes
+- Added v2_02_136 attributes
+- Added v2_02_137 attributes
+- Added v2_02_138 attributes
+- Added v2_02_139 attributes
+- Added v2_02_140 attributes
+- Added v2_02_141 attributes
+- Added v2_02_142 attributes
+- Added v2_02_144 attributes
+- Added v2_02_145 attributes
+- Added v2_02_146 attributes
+- Added v2_02_147 attributes
+- Added v2_02_148 attributes
+- Added v2_02_150 attributes
+- Added v2_02_151 attributes
+- Added v2_02_152 attributes
+- Added v2_02_153 attributes
+- Added v2_02_154 attributes
+- Added v2_02_155 attributes
+- Added v2_02_156 attributes
+- Added v2_02_157 attributes
+- Added v2_02_159 attributes
+- Added v2_02_160 attributes
+- Added v2_02_162 attributes
+- Added v2_02_163 attributes
+- Added v2_02_164 attributes
+- Added v2_02_165 attributes
+- Added v2_02_168 attributes
+- Added v2_02_96 attributes
+- Added v2_02_97 attributes
+- Added v2_02_99 attributes
+
 # 0.0.28 (2016-12-12)
 
 - Added LVM attributes for version 2.02.166(2)
