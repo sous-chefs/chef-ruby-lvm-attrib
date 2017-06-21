@@ -77,6 +77,10 @@ process_lvm2_version() {
 		;;
 	esac
 
+	# remove -git suffix
+	version=${version%-git}
+	msg "LVM2 Sanitized Version: $version"
+
 	# already present locally
 	if [ -d $version ]; then
 		msg "dir '$version' exists, skip"
@@ -86,8 +90,6 @@ process_lvm2_version() {
 	# dir where attributes get saved
 	lvm_dir=$version
 
-	# remove -git suffix
-	version=${version%-git}
 	git_branch=LVM-${version}
 
 	# check that local branch isn't already created

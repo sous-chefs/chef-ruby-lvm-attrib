@@ -83,7 +83,7 @@ TYPE_CONVERSION_MAP = {
 
 lvm_source = ARGV[0]
 
-version = File.readlines(lvm_source + VERSION_FILE)[0].split(" ")[0]
+version = File.readlines(lvm_source + VERSION_FILE)[0].split("-git ")[0]
 
 lvs     = []
 lvssegs = []
