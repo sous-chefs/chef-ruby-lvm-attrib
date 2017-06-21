@@ -10,7 +10,7 @@
 
 # ADDING ATTRIBUTES:
 # To add attributes:
-# * Download and extract LVM2 source version from: http://git.fedorahosted.org/cgit/lvm2.git/refs/tags
+# * Download and extract LVM2 source version from: https://sourceware.org/git/?p=lvm2.git;a=tags
 # * Fork this repository
 # * `git clone your-forked-repo`
 # * `cd your-forked-repo`
@@ -26,7 +26,7 @@
 #   `next` branch -- NOT MASTER!**
 #
 
-repo_url=git://git.fedorahosted.org/git/lvm2.git
+repo_url=git://sourceware.org/git/lvm2.git
 refs=refs/heads/master:refs/remotes/origin/master
 pattern=v2_02_*
 git_dir=lvm2/.git
