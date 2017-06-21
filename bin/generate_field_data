@@ -79,6 +79,19 @@ TYPE_CONVERSION_MAP = {
   "cache_read_misses" => "Integer",
   "cache_write_hits" => "Integer",
   "cache_write_misses" => "Integer",
+
+  # 2.02.169+
+  "lv_size" => "Integer",
+  "kernelmetadataformat" => "Integer",
+  "seg_stripes" => "Integer",
+  "seg_data_stripes" => "Integer",
+  "seg_reshape_len" => "Integer",
+  "seg_reshape_len_le" => "Integer",
+  "seg_data_copies" => "Integer",
+  "seg_data_offset" => "Integer",
+  "seg_new_data_offset" => "Integer",
+  "seg_parity_chunks" => "Integer",
+  "cachemetadataformat" => "Integer",
 }
 
 lvm_source = ARGV[0]
