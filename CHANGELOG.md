@@ -1,3 +1,11 @@
+# 0.2.0 (2017-06-21)
+
+- Updated update-lvm.sh and generate_field_data for the new Git repo containing the LVM2 project
+- Updated generate_field_data to support new fields present in v2_02_169+
+- Added v2_02_169 attributes
+- Added v2_02_170 attributes
+- Added v2_02_171 attributes
+
 # 0.1.0 (2016-12-12)
 
 - Added v2_02_101 attributes
