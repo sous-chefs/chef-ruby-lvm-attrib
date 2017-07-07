@@ -1,3 +1,7 @@
+# 0.2.1 (2017-07-07)
+
+- Updated generate_field_data to support new report object type
+
 # 0.2.0 (2017-06-21)
 
 - Updated update-lvm.sh and generate_field_data for the new Git repo containing the LVM2 project
