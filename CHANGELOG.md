@@ -1,6 +1,7 @@
-# 0.2.1 (2017-07-07)
+# 0.2.1 (2017-07-08)
 
 - Updated generate_field_data to support new report object type
+- Regenerate all existing attributes to support new report object type
 - Added v2_02_172 attributes
 
 # 0.2.0 (2017-06-21)
