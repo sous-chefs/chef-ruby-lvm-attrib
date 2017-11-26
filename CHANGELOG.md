@@ -1,3 +1,7 @@
+# 0.2.2 (2017-11-26)
+
+- Added 2_02_175 attributes for Fedora 27
+
 # 0.2.1 (2017-07-08)
 
 - Updated generate_field_data to support new report object type
