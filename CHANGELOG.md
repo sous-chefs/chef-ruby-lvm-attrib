@@ -1,3 +1,9 @@
+# 0.2.3 (2018-02-23)
+
+- Added 2_02_177 attributes
+- Added 2_02_176 attributes
+- Added 2_02_173 attributes
+
 # 0.2.2 (2017-11-26)
 
 - Added 2_02_175 attributes for Fedora 27
