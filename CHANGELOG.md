@@ -1,3 +1,9 @@
+# 0.2.4 (2018-06-29)
+
+- Added 2_02_179 attributes
+- Added 2_02_178-rc1 attributes
+- Added 2_02_178 attributes
+
 # 0.2.3 (2018-02-23)
 
 - Added 2_02_177 attributes
