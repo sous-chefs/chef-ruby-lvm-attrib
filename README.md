@@ -28,9 +28,7 @@ sudo gem install ruby-lvm-attrib
 
 To add attributes:
 
-Use
-
-<update-lvm.sh> script to add new version. Find the interested LVM2 tag from <a href="https://git.fedorahosted.org/cgit/lvm2.git/refs/tags">LVM2 Repository</a>.</update-lvm.sh>
+Use `update-lvm.sh`script to add new version. Find the interested LVM2 tag from [LVM2 Repository](https://sourceware.org/git/?p=lvm2.git).
 
 - Fork this repository
 - `git clone your-forked-repo`
