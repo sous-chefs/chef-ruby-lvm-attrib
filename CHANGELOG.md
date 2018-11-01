@@ -1,3 +1,7 @@
+# 0.2.5 (2018-11-01)
+
+Added v2_02_180 attributes 
+
 # 0.2.4 (2018-06-29)
 
 - Added 2_02_179 attributes
