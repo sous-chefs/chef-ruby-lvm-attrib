@@ -1,6 +1,11 @@
+# 0.2.6 (2018-11-02)
+
+- Added attributes 2.02.178(2) to 2.02.182(2)
+- Reworked the tooling to generate the attributes to work with the new format
+
 # 0.2.5 (2018-11-01)
 
-Added v2_02_180 attributes 
+- Added v2_02_180 attributes
 
 # 0.2.4 (2018-06-29)
 
