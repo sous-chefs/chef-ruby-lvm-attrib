@@ -41,13 +41,10 @@ msg() {
 clone_lvm2() {
 	if [ ! -d $GIT_DIR ]; then
 		msg "Checkout $repo_url"
-		install -d $GIT_DIR
-		git init
-		git remote add origin $repo_url
-		git fetch --depth 1 origin $refs --tags
+		git submodule update --init --recursive
 	else
 		msg "Update $repo_url"
-		git fetch origin $refs --tags
+		git submodule update --recursive
 	fi
 }
 
