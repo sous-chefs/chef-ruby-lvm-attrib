@@ -1,11 +1,11 @@
 # 0.2.6 (2018-11-02)
 
-- Added attributes 2.02.178(2) to 2.02.182(2)
+- Added attributes for 2.02.178(2), 2.02.178(2)-rc1, 2.02.179(2), 2.02.180(2), 2.02.181(2), 2.02.182(2)
 - Reworked the tooling to generate the attributes to work with the new format
 
 # 0.2.5 (2018-11-01)
 
-- Added v2_02_180 attributes
+- This release is broken and has no changes.
 
 # 0.2.4 (2018-06-29)
 
