@@ -97,7 +97,7 @@ Added $tag attributes
 
 $(git diff --stat HEAD $attr_dir)
 EOF
-	git commit -F .git/commit-msg $attr_dir
+	git commit -s -F .git/commit-msg $attr_dir
 
 	return 0
 }
