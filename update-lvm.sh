@@ -12,9 +12,6 @@
 # To add attributes:
 # * Download and extract LVM2 source version from: https://sourceware.org/git/?p=lvm2.git;a=tags
 # * Fork this repository
-# * `git clone your-forked-repo`
-# * `cd your-forked-repo`
-# * `git checkout -b mybranch`
 # * `bin/generate_field_data path/to/lvm2-source`
 #   * See missing attribute type note below if there's issues, otherwise will just return "Done."
 # * `mv LVM_VERSION_FULL lib/lvm/attributes/LVM_VERSION`
@@ -22,11 +19,8 @@
 #   * LVM_VERSION being something like 2.02.86(2) or 2.02.98(2)
 # * `git commit -am "Added LVM_VERSION attributes"`
 # * `git push origin mybranch`
-# * Submit PR to this repository. **Please make sure to point your pull at the
-#   `next` branch -- NOT MASTER!**
 #
 
-repo_url=git://sourceware.org/git/lvm2.git
 refs=refs/heads/master:refs/remotes/origin/master
 pattern=v2_02_*
 git_dir=lvm2/.git
@@ -38,14 +32,14 @@ msg() {
 }
 
 # do initial clone or update LVM2 repository
-clone_lvm2() {
-	if [ ! -d $GIT_DIR ]; then
-		msg "Checkout $repo_url"
+update_lvm2_repo() {
+	if [ ! -e lvm2/.git ]; then
+		msg "Checkout LVM2 repository"
 		git submodule update --init --recursive
-	else
-		msg "Update $repo_url"
-		git submodule update --recursive
 	fi
+
+	msg "Update LVM2 repository"
+	GIT_DIR=$git_dir git fetch origin $refs --tags
 }
 
 process_lvm2_version() {
@@ -60,9 +54,7 @@ process_lvm2_version() {
 	fi
 
 	msg "Checkout LVM2 $tag"
-	cd lvm2
-	git checkout $tag
-	cd ..
+	GIT_DIR=lvm2/.git git checkout $tag
 
 	version=$(awk '{print $1}' lvm2/VERSION)
 	msg "LVM2 Full Version: $version"
@@ -111,16 +103,12 @@ process_lvm2_version() {
 	return 0
 }
 
-
-GIT_DIR=$git_dir clone_lvm2
+update_lvm2_repo
 
 if [ "$1" = "-a" ]; then
 	# obtain all versions
-	set -- $(GIT_DIR=$git_dir git tag -l $pattern)
+	set -- $(GIT_DIR=lvm2/.git git tag -l $pattern)
 fi
-
-# it shouldn't be exported, but somewhy is. unset
-unset GIT_DIR
 
 # process versions specified on commandline,
 # otherwise iterate over all LVM2 tags
@@ -128,6 +116,9 @@ for tag in "$@"; do
 	process_lvm2_version $tag || continue
 	updated=1
 done
+
+# keep the pointer to master branch
+GIT_DIR=lvm2/.git git checkout master
 
 if [ -z "$updated" ]; then
 	echo >&2 "Nothing updated"
