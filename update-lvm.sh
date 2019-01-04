@@ -22,7 +22,7 @@
 #
 
 refs=refs/heads/master:refs/remotes/origin/master
-pattern=v2_02_*
+pattern=v2_0[23]_*
 git_dir=lvm2/.git
 
 set -e
