@@ -1,3 +1,9 @@
+# 0.2.7 (2019-01-04)
+
+- Added all attributes up to 2.03.01 [@ctramnitz](https://github.com/ctramnitz)
+- Update the updater script to allow for 2.03 versions [@ctramnitz](https://github.com/ctramnitz)
+- Updated the updater script with multiple fixes and improvements [@glensc](https://github.com/glensc)
+
 # 0.2.6 (2018-11-02)
 
 - Added attributes for 2.02.178(2), 2.02.178(2)-rc1, 2.02.179(2), 2.02.180(2), 2.02.181(2), 2.02.182(2)
