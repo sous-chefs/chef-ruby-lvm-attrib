@@ -199,7 +199,8 @@ pvs.sort!     { |x, y| x[:column] <=> y[:column] }
 pvssegs.sort! { |x, y| x[:column] <=> y[:column] }
 vgs.sort!     { |x, y| x[:column] <=> y[:column] }
 
-FileUtils.mkdir(version)
+attributes_dir = "lib/lvm/attributes/#{version}"
+FileUtils.mkdir(attributes_dir)
 
 disclaimer = <<go
 # These are column to object attribute mappings
@@ -207,10 +208,10 @@ disclaimer = <<go
 # #{lvm_source}/lib/report/columns.h
 go
 
-File.open("#{version}/lvs.yaml", "w")    { |f| f.write(disclaimer); f.write(lvs.to_yaml) }
-File.open("#{version}/lvsseg.yaml", "w") { |f| f.write(disclaimer); f.write(lvssegs.to_yaml) }
-File.open("#{version}/pvs.yaml", "w")    { |f| f.write(disclaimer); f.write(pvs.to_yaml) }
-File.open("#{version}/pvsseg.yaml", "w") { |f| f.write(disclaimer); f.write(pvssegs.to_yaml) }
-File.open("#{version}/vgs.yaml", "w")    { |f| f.write(disclaimer); f.write(vgs.to_yaml) }
+File.open("#{attributes_dir}/lvs.yaml", "w")    { |f| f.write(disclaimer); f.write(lvs.to_yaml) }
+File.open("#{attributes_dir}/lvsseg.yaml", "w") { |f| f.write(disclaimer); f.write(lvssegs.to_yaml) }
+File.open("#{attributes_dir}/pvs.yaml", "w")    { |f| f.write(disclaimer); f.write(pvs.to_yaml) }
+File.open("#{attributes_dir}/pvsseg.yaml", "w") { |f| f.write(disclaimer); f.write(pvssegs.to_yaml) }
+File.open("#{attributes_dir}/vgs.yaml", "w")    { |f| f.write(disclaimer); f.write(vgs.to_yaml) }
 
 puts "Done."
