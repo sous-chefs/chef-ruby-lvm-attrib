@@ -1,3 +1,8 @@
+# 0.2.8 (2019-08-09)
+
+- Added 2.02.185
+- Added 2.03.02
+
 # 0.2.7 (2019-01-04)
 
 - Added all attributes up to 2.03.01 [@ctramnitz](https://github.com/ctramnitz)
