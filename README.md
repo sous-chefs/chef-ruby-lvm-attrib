@@ -1,5 +1,7 @@
 # chef-ruby-lvm-attrib
 
+[![Gem Version](https://badge.fury.io/rb/chef-ruby-lvm-attrib.svg)](https://badge.fury.io/rb/chef-ruby-lvm-attrib)
+
 This is a list of attributes for lvm objects. They are generated from the source code and broken down by version. See ADDING ATTRIBUTES below to contribute.
 
 At their core these files exist to determine which arguments to pass lvs/vgs/pvs and the subsequent type conversions.
