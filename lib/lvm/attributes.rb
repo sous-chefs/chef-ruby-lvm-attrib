@@ -2,7 +2,7 @@ require "yaml"
 
 module LVM
   module Attributes
-    VERSION = "0.2.9".freeze
+    VERSION = "0.2.10".freeze
 
     def load(version, name)
       cwd = File.dirname(__FILE__)
