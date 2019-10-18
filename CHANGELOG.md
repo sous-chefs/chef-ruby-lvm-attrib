@@ -1,8 +1,16 @@
 # chef-ruby-lvm-attrib Changelog
 
+<!-- latest_release 0.2.9 -->
+## [v0.2.9](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.2.9) (2019-10-18)
+
+#### Merged Pull Requests
+- Wire up Expeditor and Buildkite [#22](https://github.com/chef/chef-ruby-lvm-attrib/pull/22) ([tas50](https://github.com/tas50))
 <!-- latest_release -->
-<!-- latest_release -->
-<!-- release_rollup -->
+<!-- release_rollup since=0.2.8 -->
+### Changes not yet released to rubygems.org
+
+#### Merged Pull Requests
+- Wire up Expeditor and Buildkite [#22](https://github.com/chef/chef-ruby-lvm-attrib/pull/22) ([tas50](https://github.com/tas50)) <!-- 0.2.9 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
