@@ -1,6 +1,6 @@
 require "bundler/gem_tasks"
 
-task :default => :style
+task default: :style
 
 require "chefstyle"
 require "rubocop/rake_task"

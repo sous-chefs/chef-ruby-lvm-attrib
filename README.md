@@ -23,7 +23,7 @@ Currently this is split from the main ruby-lvm gem since these files require upd
 ## Installation
 
 ```bash
-sudo gem install ruby-lvm-attrib
+sudo gem install chef-ruby-lvm-attrib
 ```
 
 ## Updating for new LVM releases
