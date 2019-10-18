@@ -1,9 +1,14 @@
 require "bundler/gem_tasks"
 
-task :default => :style
+task default: :style
 
-require "chefstyle"
-require "rubocop/rake_task"
-RuboCop::RakeTask.new(:style) do |task|
-  task.options += ["--display-cop-names", "--no-color"]
+begin
+  require "chefstyle"
+  require "rubocop/rake_task"
+  desc "Run Chefstyle tests"
+  RuboCop::RakeTask.new(:style) do |task|
+    task.options += ["--display-cop-names", "--no-color"]
+  end
+rescue LoadError
+  puts "chefstyle gem is not installed. bundle install first to make sure all dependencies are installed."
 end
