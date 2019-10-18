@@ -1,7 +1,16 @@
+# chef-ruby-lvm-attrib Changelog
+
+<!-- latest_release -->
+<!-- latest_release -->
+<!-- release_rollup -->
+<!-- release_rollup -->
+
+<!-- latest_stable_release -->
 # 0.2.8 (2019-08-09)
 
 - Added 2.02.185
 - Added 2.03.02
+<!-- latest_stable_release -->
 
 # 0.2.7 (2019-01-04)
 

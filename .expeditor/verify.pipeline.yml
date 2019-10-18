@@ -1,0 +1,10 @@
+steps:
+
+- label: lint-chefstyle
+  command:
+    - .expeditor/run_linux_tests.sh "rake style"
+
+  expeditor:
+    executor:
+      docker:
+        image: ruby:2.6-buster
