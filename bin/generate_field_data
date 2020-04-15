@@ -91,6 +91,28 @@ TYPE_CONVERSION_MAP = {
   "seg_new_data_offset" => "Integer",
   "seg_parity_chunks" => "Integer",
   "cachemetadataformat" => "Integer",
+
+  # these seems to be integers
+  "vdo_used_size" => "Integer",
+  "vdo_saving_percent" => "Integer",
+  "writecache_total_blocks" => "Integer",
+  "writecache_free_blocks" => "Integer",
+  "writecache_writeback_blocks" => "Integer",
+  "writecache_error" => "Integer",
+  "vdo_minimum_io_size" => "Integer",
+  "vdo_block_map_cache_size" => "Integer",
+  "vdo_block_map_era_length" => "Integer",
+  "vdo_index_memory_size" => "Integer",
+  "vdo_slab_size" => "Integer",
+  "vdo_ack_threads" => "Integer",
+  "vdo_bio_threads" => "Integer",
+  "vdo_bio_rotation" => "Integer",
+  "vdo_cpu_threads" => "Integer",
+  "vdo_hash_zone_threads" => "Integer",
+  "vdo_logical_threads" => "Integer",
+  "vdo_physical_threads" => "Integer",
+  "vdo_max_discard" => "Integer",
+  "vdo_header_size" => "Integer",
 }.freeze
 
 lvm_source = ARGV[0]
