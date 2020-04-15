@@ -1,26 +1,23 @@
 # chef-ruby-lvm-attrib Changelog
 
-<!-- latest_release 0.3.1 -->
+<!-- latest_release -->
+<!-- latest_release -->
+<!-- release_rollup -->
+<!-- release_rollup -->
+
+<!-- latest_stable_release -->
 ## [v0.3.1](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.1) (2020-04-15)
 
 #### Merged Pull Requests
 - Add 2.03.10 data [#25](https://github.com/chef/chef-ruby-lvm-attrib/pull/25) ([tas50](https://github.com/tas50))
-<!-- latest_release -->
-<!-- release_rollup since=0.3.0 -->
-### Changes not yet released to rubygems.org
-
-#### Merged Pull Requests
-- Add 2.03.10 data [#25](https://github.com/chef/chef-ruby-lvm-attrib/pull/25) ([tas50](https://github.com/tas50)) <!-- 0.3.1 -->
-<!-- release_rollup -->
-
 <!-- latest_stable_release -->
+
 ## [v0.3.0](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.0) (2019-10-18)
 
 #### Merged Pull Requests
 - Wire up Expeditor and Buildkite [#22](https://github.com/chef/chef-ruby-lvm-attrib/pull/22) ([tas50](https://github.com/tas50))
 - Added v2_02_186 attributes [#18](https://github.com/chef/chef-ruby-lvm-attrib/pull/18) ([b-dean](https://github.com/b-dean))
 - Add the gem badge to the readme + resolve chefstyle warnings [#23](https://github.com/chef/chef-ruby-lvm-attrib/pull/23) ([tas50](https://github.com/tas50))
-<!-- latest_stable_release -->
 
 # 0.2.8 (2019-08-09)
 
