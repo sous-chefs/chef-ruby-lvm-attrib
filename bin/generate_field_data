@@ -131,8 +131,8 @@ File.readlines(lvm_source + COLUMNS_FILE).each do |line|
   fields = $1.split(", ")
   fields.each { |f| f.gsub!(/^"/, ""); f.gsub!(/"$/, "") }
   p fields if debug
-  app           = fields[0]
-  general_type  = fields[2]
+  app = fields[0]
+  general_type = fields[2]
   specific_type = fields[6]
   column        = fields[7]
   method        = fields[7].dup
