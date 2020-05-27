@@ -1,24 +1,21 @@
 # chef-ruby-lvm-attrib Changelog
 
-<!-- latest_release 0.3.2 -->
+<!-- latest_release -->
+<!-- latest_release -->
+<!-- release_rollup -->
+<!-- release_rollup -->
+
+<!-- latest_stable_release -->
 ## [v0.3.2](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.2) (2020-05-27)
 
 #### Merged Pull Requests
 - Added v2_03_08 attributes [#27](https://github.com/chef/chef-ruby-lvm-attrib/pull/27) ([gaelik](https://github.com/gaelik))
-<!-- latest_release -->
-<!-- release_rollup since=0.3.1 -->
-### Changes not yet released to rubygems.org
-
-#### Merged Pull Requests
-- Added v2_03_08 attributes [#27](https://github.com/chef/chef-ruby-lvm-attrib/pull/27) ([gaelik](https://github.com/gaelik)) <!-- 0.3.2 -->
-<!-- release_rollup -->
-
 <!-- latest_stable_release -->
+
 ## [v0.3.1](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.1) (2020-04-15)
 
 #### Merged Pull Requests
 - Add 2.03.10 data [#25](https://github.com/chef/chef-ruby-lvm-attrib/pull/25) ([tas50](https://github.com/tas50))
-<!-- latest_stable_release -->
 
 ## [v0.3.0](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.0) (2019-10-18)
 
