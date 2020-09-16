@@ -5,8 +5,8 @@
 #
 # ./generate_field_data ~/LVM2.2.02.38
 
-require "fileutils"
-require "yaml"
+require "fileutils" unless defined?(FileUtils)
+require "yaml" unless defined?(YAML)
 
 VERSION_FILE = "/VERSION".freeze
 COLUMNS_FILE = "/lib/report/columns.h".freeze
