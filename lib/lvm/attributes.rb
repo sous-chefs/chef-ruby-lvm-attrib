@@ -1,11 +1,11 @@
-require "yaml"
+require "yaml" unless defined?(YAML)
 
 module LVM
   module Attributes
     VERSION = "0.3.3".freeze
 
     def load(version, name)
-      cwd = File.dirname(__FILE__)
+      cwd = __dir__
 
       # was going to be symlinks, but rubygems didn't seem to want to package
       # them
