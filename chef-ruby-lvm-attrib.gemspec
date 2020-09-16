@@ -1,4 +1,4 @@
-$:.unshift(File.expand_path('lib', __dir__))
+$:.unshift(File.expand_path("lib", __dir__))
 require "lvm/attributes"
 
 Gem::Specification.new do |gem|
