@@ -21,7 +21,7 @@
 # * `git push origin mybranch`
 #
 
-refs=refs/heads/master:refs/remotes/origin/master
+refs=refs/heads/main:refs/remotes/origin/main
 pattern=v2_0[23]_*
 git_dir=lvm2/.git
 
@@ -116,8 +116,8 @@ for tag in "$@"; do
 	updated=1
 done
 
-# keep the pointer to master branch
-GIT_DIR=lvm2/.git git checkout master
+# keep the pointer to main branch
+GIT_DIR=lvm2/.git git checkout main
 
 if [ -z "$updated" ]; then
 	echo >&2 "Nothing updated"
