@@ -1,8 +1,16 @@
 # chef-ruby-lvm-attrib Changelog
 
+<!-- latest_release 0.3.8 -->
+## [v0.3.8](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.8) (2021-06-08)
+
+#### Merged Pull Requests
+- Upgrade to GitHub-native Dependabot [#34](https://github.com/chef/chef-ruby-lvm-attrib/pull/34) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
 <!-- latest_release -->
-<!-- latest_release -->
-<!-- release_rollup -->
+<!-- release_rollup since=0.3.7 -->
+### Changes not yet released to rubygems.org
+
+#### Merged Pull Requests
+- Upgrade to GitHub-native Dependabot [#34](https://github.com/chef/chef-ruby-lvm-attrib/pull/34) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.3.8 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
