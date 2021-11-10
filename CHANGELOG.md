@@ -1,25 +1,22 @@
 # chef-ruby-lvm-attrib Changelog
 
-<!-- latest_release 0.3.9 -->
-## [v0.3.9](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.9) (2021-11-10)
-
-#### Merged Pull Requests
-- Added v2_03_12 attributes [#38](https://github.com/chef/chef-ruby-lvm-attrib/pull/38) ([ramereth](https://github.com/ramereth))
 <!-- latest_release -->
-<!-- release_rollup since=0.3.7 -->
-### Changes not yet released to rubygems.org
-
-#### Merged Pull Requests
-- Added v2_03_12 attributes [#38](https://github.com/chef/chef-ruby-lvm-attrib/pull/38) ([ramereth](https://github.com/ramereth)) <!-- 0.3.9 -->
-- Upgrade to GitHub-native Dependabot [#34](https://github.com/chef/chef-ruby-lvm-attrib/pull/34) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.3.8 -->
+<!-- latest_release -->
+<!-- release_rollup -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
+## [v0.3.9](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.9) (2021-11-10)
+
+#### Merged Pull Requests
+- Upgrade to GitHub-native Dependabot [#34](https://github.com/chef/chef-ruby-lvm-attrib/pull/34) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Added v2_03_12 attributes [#38](https://github.com/chef/chef-ruby-lvm-attrib/pull/38) ([ramereth](https://github.com/ramereth))
+<!-- latest_stable_release -->
+
 ## [v0.3.7](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.7) (2021-06-08)
 
 #### Merged Pull Requests
 - Added v2_03_11 attributes [#33](https://github.com/chef/chef-ruby-lvm-attrib/pull/33) ([MatthewRoss](https://github.com/MatthewRoss))
-<!-- latest_stable_release -->
 
 ## [v0.3.6](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.6) (2020-11-13)
 
