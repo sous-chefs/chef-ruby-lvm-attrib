@@ -92,6 +92,10 @@ TYPE_CONVERSION_MAP = {
   "seg_parity_chunks" => "Integer",
   "cachemetadataformat" => "Integer",
 
+  # 2.03.12+
+  "integritymismatches" => "Integer",
+  "raidintegrityblocksize" => "Integer",
+
   # these seems to be integers
   "vdo_used_size" => "Integer",
   "vdo_saving_percent" => "Integer",
