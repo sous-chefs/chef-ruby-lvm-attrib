@@ -91,7 +91,7 @@ process_lvm2_version() {
 	fi
 
 	git add -A $attr_dir
-	git checkout -b $git_branch master
+	git checkout -b $git_branch main
 	cat > .git/commit-msg <<-EOF
 Added $tag attributes
 
