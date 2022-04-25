@@ -2,12 +2,12 @@ require "yaml" unless defined?(YAML)
 
 module LVM
   module Attributes
-    VERSION = "0.3.9".freeze
+    VERSION = "0.3.10".freeze
 
     def load(version, name)
       cwd = __dir__
 
-      # was going to be symlinks, but rubygems didn't seem to want to package
+      # was going to be symlinks, but RubyGems didn't seem to want to package
       # them
       if version == "2.02.28"
         version = "2.02.27"
@@ -25,5 +25,5 @@ module LVM
       end
     end
     module_function :load
-  end # module Attributes
-end # module LVM
+  end
+end
