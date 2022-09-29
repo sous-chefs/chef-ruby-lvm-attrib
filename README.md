@@ -48,7 +48,7 @@ If all is well, publish the changes and make Pull Request from GitHub web:
 - `git push origin mybranch`
 - Submit PR to this repository.
 
-### Missing Attribute Type:
+### Missing Attribute Type
 
 If you get an error like the below:
 

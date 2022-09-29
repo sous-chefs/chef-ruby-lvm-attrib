@@ -1,52 +1,60 @@
 # chef-ruby-lvm-attrib Changelog
 
-<!-- latest_release -->
-<!-- latest_release -->
-<!-- release_rollup -->
-<!-- release_rollup -->
+## [v0.3.10](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.10) (2022-09-29)
 
-<!-- latest_stable_release -->
+### Merged Pull Requests
+
+- Added v2_03_15 & v2_03_14 attributes [#42](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/42) ([damacus](https://github.com/damacus))
+- Added v2_02_188 attributes [#39](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/39)([RoeeFabrikant](https://github.com/RoeeFabrikant))
+
 ## [v0.3.9](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.9) (2021-11-10)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Upgrade to GitHub-native Dependabot [#34](https://github.com/chef/chef-ruby-lvm-attrib/pull/34) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
 - Added v2_03_12 attributes [#38](https://github.com/chef/chef-ruby-lvm-attrib/pull/38) ([ramereth](https://github.com/ramereth))
-<!-- latest_stable_release -->
 
 ## [v0.3.7](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.7) (2021-06-08)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Added v2_03_11 attributes [#33](https://github.com/chef/chef-ruby-lvm-attrib/pull/33) ([MatthewRoss](https://github.com/MatthewRoss))
 
 ## [v0.3.6](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.6) (2020-11-13)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Adding Lvm 2.03.09(2) [#31](https://github.com/chef/chef-ruby-lvm-attrib/pull/31) ([gaelik](https://github.com/gaelik))
 
 ## [v0.3.5](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.5) (2020-10-01)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Misc Chefstyle fixes [#29](https://github.com/chef/chef-ruby-lvm-attrib/pull/29) ([tas50](https://github.com/tas50))
 - Add 2.02.187(2) attributes [#30](https://github.com/chef/chef-ruby-lvm-attrib/pull/30) ([gyanendra-choudhary](https://github.com/gyanendra-choudhary))
 
 ## [v0.3.3](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.3) (2020-07-21)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Added v2_03_07 attributes [#28](https://github.com/chef/chef-ruby-lvm-attrib/pull/28) ([bottleneko](https://github.com/bottleneko))
 
 ## [v0.3.2](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.2) (2020-05-27)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Added v2_03_08 attributes [#27](https://github.com/chef/chef-ruby-lvm-attrib/pull/27) ([gaelik](https://github.com/gaelik))
 
 ## [v0.3.1](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.1) (2020-04-15)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Add 2.03.10 data [#25](https://github.com/chef/chef-ruby-lvm-attrib/pull/25) ([tas50](https://github.com/tas50))
 
 ## [v0.3.0](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.0) (2019-10-18)
 
-#### Merged Pull Requests
+### Merged Pull Requests
+
 - Wire up Expeditor and Buildkite [#22](https://github.com/chef/chef-ruby-lvm-attrib/pull/22) ([tas50](https://github.com/tas50))
 - Added v2_02_186 attributes [#18](https://github.com/chef/chef-ruby-lvm-attrib/pull/18) ([b-dean](https://github.com/b-dean))
 - Add the gem badge to the readme + resolve chefstyle warnings [#23](https://github.com/chef/chef-ruby-lvm-attrib/pull/23) ([tas50](https://github.com/tas50))
