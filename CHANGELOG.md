@@ -1,6 +1,6 @@
 # chef-ruby-lvm-attrib Changelog
 
-## [v0.3.10](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.10) (2022-09-29)
+## [v0.3.11](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.11) (2022-09-29)
 
 ### Merged Pull Requests
 
