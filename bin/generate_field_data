@@ -103,6 +103,7 @@ TYPE_CONVERSION_MAP = {
   "writecache_free_blocks" => "Integer",
   "writecache_writeback_blocks" => "Integer",
   "writecache_error" => "Integer",
+  "writecache_block_size" => "Integer",
   "vdo_minimum_io_size" => "Integer",
   "vdo_block_map_cache_size" => "Integer",
   "vdo_block_map_era_length" => "Integer",
