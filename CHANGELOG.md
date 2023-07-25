@@ -1,5 +1,13 @@
 # chef-ruby-lvm-attrib Changelog
 
+## [v0.3.12](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.12) (2023-07-25)
+
+### Merged Pull Requests
+
+- Update actions/checkout action to v3 [#47](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/47) ([renovate[bot]](https://github.com/apps/renovate))
+- Added Lvm 2.03.16(2) attributes [#46](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/46) ([schrd](https://github.com/schrd))
+- Add renovate.json [#45](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v0.3.11](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.11) (2022-09-29)
 
 ### Merged Pull Requests
