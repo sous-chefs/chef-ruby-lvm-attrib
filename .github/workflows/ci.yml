@@ -2,6 +2,7 @@
 name: Unit Test
 
 'on':
+  pull_request:
   push:
     branches:
       - main
@@ -16,7 +17,7 @@ jobs:
         ruby: ['3.1']
     name: Chefstyle on Ruby ${{ matrix.ruby }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
@@ -32,7 +33,7 @@ jobs:
       matrix:
         ruby: ['2.7', '3.0', '3.1']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
