@@ -1,5 +1,11 @@
 # chef-ruby-lvm-attrib Changelog
 
+## [v0.3.13](https://github.com/sous-chefs/chef-ruby-lvm-attrib/tree/v0.3.13) (2023-07-25)
+
+### Merged Pull Requests
+
+- Added v2_03_21 attributes [#49](https://github.com/sous-chefs/chef-ruby-lvm-attrib/pull/49) ([amarkelov](https://github.com/amarkelov))
+
 ## [v0.3.12](https://github.com/chef/chef-ruby-lvm-attrib/tree/v0.3.12) (2023-07-25)
 
 ### Merged Pull Requests
