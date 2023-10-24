@@ -1,4 +1,5 @@
 require "yaml" unless defined?(YAML)
+require_relative "version"
 
 module LVM
   module Attributes
