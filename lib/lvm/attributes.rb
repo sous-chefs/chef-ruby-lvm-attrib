@@ -2,8 +2,6 @@ require "yaml" unless defined?(YAML)
 
 module LVM
   module Attributes
-    VERSION = "0.3.13".freeze
-
     def load(version, name)
       cwd = __dir__
 
