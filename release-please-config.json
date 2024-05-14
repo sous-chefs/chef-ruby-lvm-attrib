@@ -1,5 +1,6 @@
 {
   "packages": {
+    "version-file": "lib/lvm/version.rb",
     ".": {
       "package-name": "chef-ruby-lvm-attrib",
       "changelog-path": "CHANGELOG.md",
