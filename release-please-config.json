@@ -1,16 +1,12 @@
 {
+  "version-file": "lib/lvm/version.rb",
+  "release-type": "ruby",
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
+  "draft": false,
+  "prerelease": false,
   "packages": {
-    "version-file": "lib/lvm/version.rb",
-    ".": {
-      "package-name": "chef-ruby-lvm-attrib",
-      "changelog-path": "CHANGELOG.md",
-      "release-type": "ruby",
-      "bump-minor-pre-major": false,
-      "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false,
-      "version-file": "lib/lvm/version.rb"
-    }
+    ".": {}
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
