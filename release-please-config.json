@@ -1,7 +1,6 @@
 {
   "packages": {
     ".": {
-      "package-name": "chef-ruby-lvm-attrib",
       "changelog-path": "CHANGELOG.md",
       "release-type": "ruby",
       "include-component-in-tag": false,
