@@ -3,10 +3,7 @@
     ".": {
       "changelog-path": "CHANGELOG.md",
       "release-type": "ruby",
-      "bump-minor-pre-major": false,
-      "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false,
+      "include-component-in-tag": false,
       "version-file": "lib/lvm/version.rb"
     }
   },
