@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added v2_03_27 attributes
+
 ## [0.4.0](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.3.15...v0.4.0) (2024-06-28)
 
 
