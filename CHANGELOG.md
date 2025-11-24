@@ -2,6 +2,23 @@
 
 ## Unreleased
 
+## [0.5.0](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.4.3...v0.5.0) (2025-11-24)
+
+
+### Features
+
+* Remove changelog ([#64](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/64)) ([f00dc03](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/f00dc03a46e79767204db8ba68585e0cf7c32970))
+
+
+### Bug Fixes
+
+* Added v2_03_27 attributes ([#78](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/78)) ([#80](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/80)) ([47d2845](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/47d2845cde59114b09f360cfbde6fe958a8ed77d))
+* Added v2_03_28 attributes ([#82](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/82)) ([387e46a](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/387e46a7c77baa3e9d7865b59da8c84263ee3d07))
+* Fix release-config ([#66](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/66)) ([53c59f1](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/53c59f1180d03c74dd5513e2f3a6704597d9581c))
+* More ([#68](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/68)) ([3c82993](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/3c829930cdf73900a6b13eb77a452a0a4cee1d26))
+* release please ([#75](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/75)) ([ca89fcc](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/ca89fcc4fce8ab8cab00e65b852597b2f51c3aa4))
+* release-please-config ([#69](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/69)) ([e6ea516](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/e6ea516797839857aeea1e77186ce27b21b02dd5))
+
 ## [0.4.3](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.4.2...v0.4.3) (2025-11-24)
 
 
