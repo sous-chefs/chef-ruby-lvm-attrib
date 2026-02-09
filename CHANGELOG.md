@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [0.6.0](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.5.0...v0.6.0) (2026-02-09)
+
+
+### Features
+
+* Added v2_03_29 attributes ([#91](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/91)) ([d0dc224](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/d0dc2246df37835e2f2e0106af69e41b64c60e55))
+
 ## [0.5.0](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.4.3...v0.5.0) (2025-11-24)
 
 
