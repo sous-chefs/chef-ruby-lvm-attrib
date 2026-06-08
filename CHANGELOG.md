@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [0.6.2](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.6.1...v0.6.2) (2026-06-08)
+
+
+### Bug Fixes
+
+* constrain rexml dependency ([#97](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/97)) ([1ef525c](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/1ef525c7264701a99fa49220010d6010341a54c6))
+
 ## [0.6.1](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.6.0...v0.6.1) (2026-06-01)
 
 
