@@ -24,6 +24,9 @@
 refs=refs/heads/main:refs/remotes/origin/main
 pattern=v2_0[23]_*
 git_dir=lvm2/.git
+no_branch=0
+lvm2_start_branch=
+lvm2_start_sha=
 
 set -e
 
@@ -33,13 +36,31 @@ msg() {
 
 # do initial clone or update LVM2 repository
 update_lvm2_repo() {
+	git config -f .gitmodules submodule.lvm2.url https://sourceware.org/git/lvm2.git
+	git submodule sync -- lvm2 >/dev/null 2>&1 || true
+
 	if [ ! -e lvm2/.git ]; then
 		msg "Checkout LVM2 repository"
 		git submodule update --init --recursive
 	fi
 
+	if [ -e lvm2/.git ]; then
+		GIT_DIR=$git_dir git remote set-url origin https://sourceware.org/git/lvm2.git
+	fi
+
 	msg "Update LVM2 repository"
 	GIT_DIR=$git_dir git fetch origin $refs --tags
+
+	lvm2_start_branch=$(GIT_DIR=$git_dir git symbolic-ref -q --short HEAD || true)
+	lvm2_start_sha=$(GIT_DIR=$git_dir git rev-parse --verify HEAD)
+}
+
+restore_lvm2_repo_ref() {
+	if [ -n "$lvm2_start_branch" ]; then
+		GIT_DIR=$git_dir git checkout -q "$lvm2_start_branch" || GIT_DIR=$git_dir git checkout -q "$lvm2_start_sha"
+	else
+		GIT_DIR=$git_dir git checkout -q "$lvm2_start_sha"
+	fi
 }
 
 process_lvm2_version() {
@@ -78,10 +99,12 @@ process_lvm2_version() {
 
 	git_branch=LVM-${version}
 
-	# check that local branch isn't already created
-	if git show-ref --verify --quiet refs/heads/$git_branch; then
-		msg "Git branch '$git_branch' already exists; skip"
-		return 1
+	if [ "$no_branch" -eq 0 ]; then
+		# check that local branch isn't already created
+		if git show-ref --verify --quiet refs/heads/$git_branch; then
+			msg "Git branch '$git_branch' already exists; skip"
+			return 1
+		fi
 	fi
 
 	./bin/generate_field_data lvm2
@@ -90,21 +113,46 @@ process_lvm2_version() {
 		return 1
 	fi
 
-	git add -A $attr_dir
-	git checkout -b $git_branch main
-	cat > .git/commit-msg <<-EOF
+	if [ "$no_branch" -eq 1 ]; then
+		msg "Generated $attr_dir (--no-branch mode: no git branch or commit created)"
+	else
+		git add -A $attr_dir
+		git checkout -b $git_branch main
+		cat > .git/commit-msg <<-EOF
 Added $tag attributes
 
 $(git diff --stat HEAD $attr_dir)
 EOF
-	git commit -s -F .git/commit-msg $attr_dir
+		git commit -s -F .git/commit-msg $attr_dir
+	fi
 
 	return 0
 }
 
 update_lvm2_repo
 
-if [ "$1" = "-a" ]; then
+tags=""
+while [ "$#" -gt 0 ]; do
+	case "$1" in
+	-a)
+		tags="$tags __ALL__"
+		;;
+	--no-branch)
+		no_branch=1
+		;;
+	-h|--help)
+		echo "Usage: $0 [-a] [--no-branch] [v2_03_34 ...]"
+		exit 0
+		;;
+	*)
+		tags="$tags $1"
+		;;
+	esac
+	shift
+done
+
+set -- $tags
+if [ "$1" = "__ALL__" ]; then
 	# obtain all versions
 	set -- $(GIT_DIR=lvm2/.git git tag -l $pattern)
 fi
@@ -116,8 +164,8 @@ for tag in "$@"; do
 	updated=1
 done
 
-# keep the pointer to main branch
-GIT_DIR=lvm2/.git git checkout main
+# keep the pointer to whatever lvm2 ref was checked out when script started
+restore_lvm2_repo_ref
 
 if [ -z "$updated" ]; then
 	echo >&2 "Nothing updated"
