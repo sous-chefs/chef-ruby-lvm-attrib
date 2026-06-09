@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [0.7.1](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.7.0...v0.7.1) (2026-06-09)
+
+
+### Bug Fixes
+
+* trigger test release to verify RubyGems publish pipeline ([#102](https://github.com/sous-chefs/chef-ruby-lvm-attrib/issues/102)) ([b412ffc](https://github.com/sous-chefs/chef-ruby-lvm-attrib/commit/b412ffc98fa10e720ae1be077dd7f8555eee14a0))
+
 ## [0.7.0](https://github.com/sous-chefs/chef-ruby-lvm-attrib/compare/v0.6.2...v0.7.0) (2026-06-09)
 
 
