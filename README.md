@@ -24,18 +24,23 @@ sudo gem install chef-ruby-lvm-attrib
 
 ## Updating for new LVM releases
 
-To add attributes:
-
-Use `update-lvm.sh` script to add new version. Find the interested LVM2 tag from [LVM2 Repository](https://sourceware.org/git/?p=lvm2.git).
+To add attributes, use `update-lvm.sh`. Find tags in the [LVM2 Repository](https://sourceware.org/git/?p=lvm2.git;a=tags).
 
 - Fork this repository
 - `git clone your-forked-repo`
 - `cd your-forked-repo`
 - `./update-lvm.sh v2_02_155`
 
+Helpful options:
+
+- `./update-lvm.sh -a` to process all missing versions
+- `./update-lvm.sh v2_03_36 --no-branch` to generate files only (no branch/commit created)
+
 The script will add `lib/lvm/attributes/LVM_VERSION` where `LVM_VERSION` being something like `2.02.86(2)` or `2.02.98(2)`.
 
-If the script will not error, it will create new branch and commit `Added LVM_VERSION attributes`.
+By default, if the script succeeds it will create a branch and commit `Added LVM_VERSION attributes`.
+
+The script now syncs the `lvm2` submodule URL to HTTPS before cloning/fetching to avoid `git://` transport issues.
 
 In case of error, see missing attribute type note below.
 

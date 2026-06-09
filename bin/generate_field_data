@@ -78,6 +78,8 @@ TYPE_CONVERSION_MAP = {
   "cache_read_misses" => "Integer",
   "cache_write_hits" => "Integer",
   "cache_write_misses" => "Integer",
+  "cache_promotions" => "Integer",
+  "cache_demotions" => "Integer",
 
   # 2.02.169+
   "lv_size" => "Integer",
