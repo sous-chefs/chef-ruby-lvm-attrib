@@ -16,17 +16,17 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v6
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
 
       - name: Build and publish to GitHub Package
         uses: actionshub/publish-gem-to-github@main
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: ${{ secrets.OWNER }}
 
       - name: Build and publish to RubyGems
         uses: actionshub/publish-gem-to-rubygems@main
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         with:
           token: ${{ secrets.RUBYGEMS_API_KEY }}
